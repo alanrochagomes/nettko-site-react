@@ -16,70 +16,117 @@ body {
   font-size: 2.5rem;
 }
 
-/* Postagens */
-.post {
-  background-color: white;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+/* Layout Principal */
+.home-container {
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
 }
 
-.post-title {
-  font-size: 1.75rem;
+/* Hero Section */
+.hero-section {
+  background-image: url("http://localhost:3000/static/media/channel_banner.1864cc59c0b32dafbfbb.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: rgb(218, 220, 245);
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.post-date {
-  color: #6c757d;
-  margin-bottom: 1rem;
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.post-image {
-  width: 100%;
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
-}
-
-.post-content {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-/* Barra Lateral */
-.sidebar {
-  background-color: white;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  padding: 1.5rem;
-}
-
-.sidebar-section {
-  margin-bottom: 1.5rem;
-}
-
-.sidebar-title {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.sidebar a {
-  color: #007bff;
+.cta-button {
+  background-color: #ff007f;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
-.sidebar a:hover {
-  text-decoration: underline;
+.cta-button:hover {
+  background-color: #e60073;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
+/* Games Section */
+.games-section {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.game-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.game-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.game-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.game-description {
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+/* Footer */
+.footer {
+  background-color: #181818;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1200px; /* Define a largura máxima da imagem do banner */
+  height: auto; /* Ajusta a altura automaticamente */
+  display: block; /* Remove espaço abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
+.cta-button {
+  background-color: #ff007f;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.cta-button:hover {
+  background-color: #e60073;
 }

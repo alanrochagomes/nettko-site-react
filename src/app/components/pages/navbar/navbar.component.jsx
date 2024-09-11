@@ -1,38 +1,32 @@
-// src/components/navbar/navbar.component.jsx
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./navbar.component.css";
+import "../navbar/navbar.component.css";
 import logo from "../../../../assets/images/logo.jpg";
-import LoginComponent from "../login/login.component"; // Importa o componente de login
+import LoginComponent from "../../../components/pages/login/login.component";
 
 const NavbarComponent = () => {
   return (
-    <Navbar className="custom-navbar" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
-          <img
-            src={logo}
-            alt="Logo"
-            width="50"
-            height="50"
-            className="d-inline-block align-top"
-          />
+        <Navbar.Brand href="/">
+          <img src={logo} alt="Logo" className="navbar-logo" /> Nettko
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#videos">Videos</Nav.Link>
-            <Nav.Link href="#playlists">Playlists</Nav.Link>
-            <Nav.Link href="#lives">Lives</Nav.Link>
-            <Nav.Link href="#news">News</Nav.Link>
-            <Nav.Link href="#member">Member</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#help">Help</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/videos">Videos</Nav.Link>
+            <Nav.Link href="/playlists">Playlists</Nav.Link>
+            <Nav.Link href="/lives">Lives</Nav.Link>
+            <Nav.Link href="/news">News</Nav.Link>
+            <Nav.Link href="/member">Member</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/help">Help</Nav.Link>
           </Nav>
-          <LoginComponent />{" "}
-          {/* Adiciona o componente de login ao lado direito */}
+          <Nav className="ml-auto">
+            <LoginComponent /> {/* TODO: Adicionar componente de login */}
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

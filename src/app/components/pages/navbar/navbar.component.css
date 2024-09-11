@@ -1,34 +1,32 @@
-/* src/components/navbar/navbar.component.css */
-.custom-navbar {
-  background-color: #212529 !important; /* Define a cor de fundo da Navbar */
-  color: #ffffff; /* Define a cor do texto */
+/* Ajusta o tamanho e o espaçamento da logo no navbar */
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
-.custom-navbar .nav-link {
-  color: #ffffff; /* Cor dos links */
-  font-size: medium;
+.navbar.bg-body-tertiary {
+  background-color: #343a40;
+  padding: 1rem;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  margin-right: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
-.custom-navbar .nav-link:hover {
-  color: #0249a8; /* Cor ao passar o mouse */
+.navbar .nav-link:hover {
+  color: #17a2b8;
 }
 
-.custom-navbar .navbar-brand img {
-  max-width: 100%;
-  height: auto;
-}
-
-.custom-navbar .navbar-brand img {
-  border-radius: 15px;
-}
-
+/* Ajusta o ícone do toggler para telas menores */
 .navbar-toggler {
-  color: white;
-  background-color: #004aad;
+  border-color: transparent;
+  color: transparent;
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-  color: #004aad;
+.navbar-toggler-icon {
+  background-color: transparent;
 }
