@@ -1,18 +1,18 @@
-.navbar .nav-link {
-  margin-right: 1rem;
-  font-size: 1.1rem;
+/* src/components/navbar/navbar.component.css */
+.custom-navbar {
+  background-color: #212529 !important; /* Define a cor de fundo da Navbar */
+  color: #ffffff; /* Define a cor do texto */
 }
 
-.navbar .nav-link:hover {
-  color: #17a2b8;
+.custom-navbar .nav-link {
+  color: #ffffff; /* Cor dos links */
 }
 
-.navbar-brand img {
-  width: 50px;
-  height: 50px;
+.custom-navbar .nav-link:hover {
+  color: #0249a8; /* Cor ao passar o mouse */
 }
 
-img {
-  width: 80px;
-  border-radius: 15px;
+.custom-navbar .navbar-brand img {
+  max-width: 100%;
+  height: auto;
 }

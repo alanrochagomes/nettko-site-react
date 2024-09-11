@@ -1,10 +1,22 @@
 /* Estilo básico do footer */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh; /* Garante que o conteúdo principal ocupe a altura total da tela */
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   background-color: #212529;
   padding: 2rem;
   text-align: center;
-  position: fixed; /* Fixa o footer */
-  bottom: 0; /* Coloca o footer na parte inferior */
+  position: relative; /* Faz o footer seguir o fluxo normal da página */
+  margin-top: auto; /* Empurra o footer para a parte inferior do container flexível */
   width: 100%; /* Garante que o footer ocupe toda a largura da página */
 }
 

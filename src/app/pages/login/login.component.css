@@ -1,0 +1,17 @@
+/* src/components/login/login.component.css */
+.login-container {
+  margin-left: auto; /* Alinha o botão à direita */
+}
+
+.login-button {
+  background-color: #0249a8; /* Cor do botão */
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #023d7a; /* Cor ao passar o mouse */
+}
