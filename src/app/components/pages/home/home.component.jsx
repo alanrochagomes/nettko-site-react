@@ -17,7 +17,9 @@ const HomeComponent = () => {
       </header>
 
       <section id="games" className="games-section">
-        <h2 className="section-title">Trending Games</h2>
+        <h2 className="section-title">
+          Jogos em andamento e suas curiosidades!
+        </h2>
         <div className="game-grid">
           <div className="game-card">
             <img
@@ -55,7 +57,7 @@ const HomeComponent = () => {
               alt="Game 3"
               className="game-image"
             />
-            <h3 className="game-title">Game Title 3</h3>
+            <h3 className="game-title">Batman: Arkham Knight</h3>
             <p className="game-description">
               Escrita por Sefton Hill, Martin Lancaster e Ian Ball, a história
               acontece um ano depois dos eventos de Arkham City, em que Batman,
