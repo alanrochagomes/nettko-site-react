@@ -6,6 +6,8 @@
 
 .custom-navbar .nav-link {
   color: #ffffff; /* Cor dos links */
+  font-size: medium;
+  font-weight: bold;
 }
 
 .custom-navbar .nav-link:hover {
@@ -24,4 +26,9 @@
 .navbar-toggler {
   color: white;
   background-color: #004aad;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #004aad;
 }
