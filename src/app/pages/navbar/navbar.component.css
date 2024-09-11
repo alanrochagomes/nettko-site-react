@@ -16,3 +16,12 @@
   max-width: 100%;
   height: auto;
 }
+
+.custom-navbar .navbar-brand img {
+  border-radius: 15px;
+}
+
+.navbar-toggler {
+  color: white;
+  background-color: #004aad;
+}

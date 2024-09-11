@@ -15,3 +15,7 @@
 .login-button:hover {
   background-color: #023d7a; /* Cor ao passar o mouse */
 }
+
+.login-link {
+  text-decoration: none;
+}

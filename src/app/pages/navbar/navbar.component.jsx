@@ -11,7 +11,7 @@ const NavbarComponent = () => {
     <Navbar className="custom-navbar" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" width="30" height="30" className="d-inline-block align-top" />
+          <img src={logo} alt="Logo" width="50" height="50" className="d-inline-block align-top" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
