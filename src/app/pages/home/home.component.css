@@ -1,0 +1,82 @@
+/* General Styles */
+
+body {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+/* Main */
+
+main {
+  margin-top: 3rem; /* Ajustado para garantir mais espaço entre o banner e o conteúdo principal */
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* Banner */
+
+.banner-inner {
+  margin-top: -95px; /* Ajuste a margem superior para subir o banner um pouco */
+  margin-bottom: 5rem; /* Adiciona espaço abaixo do banner */
+}
+
+.banner-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0; /* Garantir que o banner não tenha border-radius */
+}
+
+/* Content Row */
+
+.content-row {
+  margin-bottom: 1rem;
+  background-color: #000f65;
+  border-top: 1px solid #ddd;
+  padding: 2rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+  color: var(--bs-card-color);
+}
+
+iframe {
+  width: 100%;
+  height: 192px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Custom Scrollbar for WebKit browsers */
+.custom-scroll {
+  overflow: auto;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #1f1f1f; /* Dark background for the scrollbar track */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #555; /* Darker thumb */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Lighten thumb on hover */
+}

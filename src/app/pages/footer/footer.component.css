@@ -1,0 +1,22 @@
+/* Estilo básico do footer */
+footer {
+  background-color: #212529;
+  padding: 2rem;
+  text-align: center;
+  position: fixed; /* Fixa o footer */
+  bottom: 0; /* Coloca o footer na parte inferior */
+  width: 100%; /* Garante que o footer ocupe toda a largura da página */
+}
+
+/* Estilização da imagem dentro do footer */
+footer img {
+  width: 80px;
+  border-radius: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .content-row .col-sm-6 {
+    width: 100%;
+  }
+}
