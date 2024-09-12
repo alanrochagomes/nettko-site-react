@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Importando Link do react-router-dom
 import "../navbar/navbar.component.css";
 
 const Navbar = () => {
@@ -18,11 +19,7 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <a href="#theNettko.com">theNettko.com</a>
-            </li>
-
-            <li>
-              <a href="#theNettkoPlay">theNettko</a>
+              <a href="https://youtube.theNettko.com">youtube.theNettko.com</a>
             </li>
           </ul>
         </nav>
@@ -35,7 +32,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="menu-icon" onClick={toggleMenu}>
           <span className="icon">&#9776;</span>
-          <span className="menu-text">MENU</span>
+          <span className="menu-text">Menu</span>
         </div>
         <div className="brand">
           <h1>THENETTKO</h1>
@@ -53,31 +50,65 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <a href="/">Inicio</a>
+              <Link to="/" onClick={closeMenu}>
+                Inicio
+              </Link>
             </li>
             <li>
-              <a href="#news">News</a>
+              <Link to="/videos" onClick={closeMenu}>
+                Gameplays
+              </Link>
             </li>
             <li>
-              <a href="#podcast">PodCasts</a>
+              <Link to="/news" onClick={closeMenu}>
+                News sobre Games
+              </Link>
             </li>
             <li>
-              <a href="#videos">Gameplays</a>
+              <Link to="/podcasts" onClick={closeMenu}>
+                PodCasts sobre Games
+              </Link>
             </li>
             <li>
-              <a href="#playlists">Playlists</a>
+              <Link to="/news" onClick={closeMenu}>
+                News sobre Programaçao
+              </Link>
             </li>
             <li>
-              <a href="#live">theNettko ao Vivo</a>
+              <Link to="/podcasts" onClick={closeMenu}>
+                PodCasts sobre Programação
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/playlists" onClick={closeMenu}>
+                Playlists das Gameplays
+              </Link>
             </li>
             <li>
-              <a href="#member">Sejá Membro</a>
+              <Link to="/lives" onClick={closeMenu}>
+                theNettko ao Vivo sobre Games
+              </Link>
             </li>
             <li>
-              <a href="#redes">Redes Sociais</a>
+              <Link to="/lives" onClick={closeMenu}>
+                theNettko ao Vivo sobre Programação
+              </Link>
             </li>
             <li>
-              <a href="#about">Sobre Nós</a>
+              <Link to="/member" onClick={closeMenu}>
+                Seja Membro
+              </Link>
+            </li>
+            <li>
+              <Link to="/redes" onClick={closeMenu}>
+                Redes Sociais
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={closeMenu}>
+                Sobre Nós
+              </Link>
             </li>
             <hr />
             <li>

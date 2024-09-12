@@ -1,3 +1,5 @@
+/* src/pages/footer/footer.component.css */
+
 /* Estilo básico do footer */
 body,
 html {
@@ -11,24 +13,34 @@ html {
   flex-direction: column;
 }
 
-footer {
+.footer {
   background-color: #212529;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   position: relative; /* Faz o footer seguir o fluxo normal da página */
   margin-top: auto; /* Empurra o footer para a parte inferior do container flexível */
   width: 100%; /* Garante que o footer ocupe toda a largura da página */
+  color: #f8f9fa; /* Cor do texto */
 }
 
-/* Estilização da imagem dentro do footer */
-footer img {
+.footer-logo {
   width: 80px;
-  border-radius: 15px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
 }
 
 /* Responsividade */
-@media (max-width: 800px) {
-  .content-row .col-sm-6 {
-    width: 100%;
+@media (max-width: 600px) {
+  .footer-logo {
+    width: 60px;
+  }
+
+  .footer-text {
+    font-size: 12px;
   }
 }

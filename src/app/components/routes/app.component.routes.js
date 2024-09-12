@@ -14,10 +14,8 @@ import FooterComponent from "../pages/footer/footer.component";
 const App = () => {
   return (
     <Router>
-      {/* Navbar será exibido em todas as páginas */}
       <NavbarComponent />
 
-      {/* Rotas principais */}
       <Routes>
         <Route path="/" element={<HomeComponent />} />
         <Route path="/videos" element={<VideosComponent />} />
@@ -29,7 +27,6 @@ const App = () => {
         <Route path="/help" element={<HelpComponent />} />
       </Routes>
 
-      {/* Footer será exibido em todas as páginas */}
       <FooterComponent />
     </Router>
   );

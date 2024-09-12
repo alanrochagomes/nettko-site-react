@@ -1,70 +1,46 @@
-.header {
-  background-color: #0a6ed3;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
+/* Estilo para o container das notícias */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Ajuste o valor conforme necessário */
 }
 
-.header-title {
-  font-size: 2.5rem;
-}
-
-.post {
-  background-color: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.post-title {
-  font-size: 1.75rem;
-  color: #212529;
-}
-
-.post-date {
-  font-size: 0.9rem;
-  color: #6c757d;
-  margin-bottom: 1rem;
-}
-
-.post-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.post-content {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #495057;
-}
-
-.sidebar {
-  padding-left: 2rem;
-}
-
-.sidebar-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.sidebar-section {
-  margin-bottom: 2rem;
-}
-
-.sidebar-section ul {
+/* Estilo para a lista de artigos de notícias */
+.news-articles {
+  list-style: none;
   padding: 0;
+  margin: 0;
+  width: 100%; /* Faz com que a lista ocupe toda a largura disponível */
 }
 
-.sidebar-section li {
-  margin-bottom: 0.5rem;
+/* Estilo para cada item de notícia */
+.news-article {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  margin-bottom: 20px;
 }
 
-.sidebar-section a {
-  color: #007bff;
-  text-decoration: none;
+/* Estilo para o título e descrição das notícias */
+.news-article h2 {
+  font-size: 24px;
+  margin: 10;
 }
 
-.sidebar-section a:hover {
-  text-decoration: underline;
+.news-article p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Ajuste para a responsividade */
+@media (max-width: 768px) {
+  .news-article h2 {
+    font-size: 20px;
+  }
+
+  .news-article p {
+    font-size: 14px;
+  }
 }
