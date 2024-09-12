@@ -5,6 +5,7 @@ import "../home/home.component.css";
 const HomeComponent = () => {
   return (
     <div className="home-container">
+      {/* Seção Hero */}
       <header className="hero-section">
         <img src={banner} alt="Banner" className="banner" />
         <div className="hero-text">
@@ -16,6 +17,7 @@ const HomeComponent = () => {
         </div>
       </header>
 
+      {/* Seção Games */}
       <section id="games" className="games-section">
         <h2 className="section-title">
           Jogos em andamento e suas curiosidades!
@@ -66,6 +68,47 @@ const HomeComponent = () => {
               a evacuação da cidade.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Seção News */}
+      <section id="news" className="news-section">
+        <h2 className="section-title">Novidades sobre Games e Programação</h2>
+        <div className="news-grid">
+          <article className="news-card">
+            <h3 className="news-title">Lançamento de Novos Jogos</h3>
+            <p className="news-description">
+              Confira os últimos lançamentos de jogos que estão movimentando a
+              comunidade gamer!
+            </p>
+          </article>
+          <article className="news-card">
+            <h3 className="news-title">Tendências em Programação</h3>
+            <p className="news-description">
+              Descubra as mais recentes novidades no mundo da programação e como
+              elas estão impactando o desenvolvimento de software.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Seção Podcasts */}
+      <section id="podcasts" className="podcast-section">
+        <h2 className="section-title">Podcasts de Games e Programação</h2>
+        <div className="podcast-grid">
+          <article className="podcast-card">
+            <h3 className="podcast-title">Podcast 1: GameDev Talks</h3>
+            <p className="podcast-description">
+              Discussões sobre o desenvolvimento de games com profissionais da
+              indústria.
+            </p>
+          </article>
+          <article className="podcast-card">
+            <h3 className="podcast-title">Podcast 2: CodeCast</h3>
+            <p className="podcast-description">
+              As últimas tendências e dicas para desenvolvedores de software.
+            </p>
+          </article>
         </div>
       </section>
     </div>

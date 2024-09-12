@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeComponent from "../pages/home/home.component";
-import VideosComponent from "../pages/videos/videos.component";
+import VideosComponent from "../pages/gameplays-videos/videos.component";
 import PlaylistsComponent from "../pages/playlists/playlist.component";
 import LivesComponent from "../pages/lives/live.component";
 import NewsComponent from "../pages/news-games/news.component";
