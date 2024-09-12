@@ -1,17 +1,42 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { fetchVideos } from "../gameplays-videos/service/youtubeService";
 import "../../pages/gameplays-videos/videos.component.css";
 
 const VideosComponent = () => {
   const [videos, setVideos] = useState([]);
+  const [nextPageToken, setNextPageToken] = useState(null);
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
+
+  const loadMoreVideos = useCallback(async () => {
+    if (!hasMore || loading) return;
+
+    setLoading(true);
+    const { fetchedVideos, newNextPageToken } = await fetchVideos(
+      nextPageToken
+    );
+    setVideos((prevVideos) => [...prevVideos, ...fetchedVideos]);
+    setNextPageToken(newNextPageToken);
+    setHasMore(!!newNextPageToken);
+    setLoading(false);
+  }, [hasMore, loading, nextPageToken]);
 
   useEffect(() => {
-    const getVideos = async () => {
-      const fetchedVideos = await fetchVideos();
-      setVideos(fetchedVideos);
+    loadMoreVideos();
+  }, [loadMoreVideos]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + document.documentElement.scrollTop ===
+        document.documentElement.offsetHeight
+      ) {
+        loadMoreVideos();
+      }
     };
-    getVideos();
-  }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [loadMoreVideos]);
 
   return (
     <div className="video-grid">
@@ -30,6 +55,15 @@ const VideosComponent = () => {
           </a>
         </div>
       ))}
+      {hasMore && (
+        <button
+          className="load-more-button"
+          onClick={loadMoreVideos}
+          disabled={loading}
+        >
+          {loading ? "Carregando..." : "Carregar mais"}
+        </button>
+      )}
     </div>
   );
 };
