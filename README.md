@@ -47,3 +47,52 @@ Clone este repositório para o seu ambiente local:
 git clone https://github.com/seu-usuario/the-nettko.git
 cd the-nettko
 ```
+
+### 2. Configurar Variáveis de Ambiente
+
+Para configurar o projeto, você precisará de um arquivo .env com as seguintes variáveis de ambiente:
+
+1. Crie um arquivo .env na raiz do projeto.
+
+2. Adicione as seguintes variáveis de ambiente ao arquivo .env:
+
+Clone este repositório para o seu ambiente local:
+
+```
+REACT_APP_YOUTUBE_API_KEY=YOUR_API_KEY
+REACT_APP_YOUTUBE_CHANNEL_ID=YOUR_CHANNEL_ID
+```
+Substitua YOUR_API_KEY pela sua chave da API do YouTube e YOUR_CHANNEL_ID pelo ID do seu canal do YouTube.
+
+### 3. Instalar Dependências
+
+Instale as dependências do projeto usando NPM:
+
+```
+npm install
+```
+
+### 4. Rodar o Projeto
+
+Inicie o servidor de desenvolvimento para ver o projeto em funcionamento:
+
+```
+npm start
+```
+A aplicação estará disponível em http://localhost:3000.
+
+
+
+**Contribuindo**
+
+_Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork do repositório e enviar pull requests. Certifique-se de seguir as boas práticas de desenvolvimento e fornecer uma descrição clara das alterações feitas._
+
+**Licença**
+
+_Este projeto está licenciado sob a Licença MIT._
+
+_Se você tiver alguma dúvida ou problema, não hesite em abrir uma issue no GitHub ou entrar em contato com o mantenedor do projeto._
+
+
+
+**_Obrigado por usar o theNettko!_**
