@@ -1,36 +1,100 @@
-import React from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState } from "react";
 import "../navbar/navbar.component.css";
-import logo from "../../../../assets/images/logo.jpg";
-import LoginComponent from "../../../components/pages/login/login.component";
 
-const NavbarComponent = () => {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" className="navbar-logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/videos">Videos</Nav.Link>
-            <Nav.Link href="/playlists">Playlists</Nav.Link>
-            <Nav.Link href="/lives">Lives</Nav.Link>
-            <Nav.Link href="/news">News</Nav.Link>
-            <Nav.Link href="/member">Member</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/help">Help</Nav.Link>
-          </Nav>
-          <Nav className="ml-auto">
-            <LoginComponent /> {/* TODO: Adicionar componente de login */}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header>
+      <div className="topbar">
+        <nav>
+          <ul>
+            <li>
+              <a href="#theNettko.com">theNettko.com</a>
+            </li>
+
+            <li>
+              <a href="#theNettkoPlay">theNettko</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="account">
+          <a href="#assine">Assine Já</a>
+          <a href="#conta">Conta theNettko</a>
+        </div>
+      </div>
+
+      <div className="navbar">
+        <div className="menu-icon" onClick={toggleMenu}>
+          <span className="icon">&#9776;</span>
+          <span className="menu-text">MENU</span>
+        </div>
+        <div className="brand">
+          <h1>THENETTKO</h1>
+        </div>
+        <div className="login">
+          <button>Login</button>
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className={`sidebar ${menuOpen ? "open" : ""}`}>
+        <button className="close-btn" onClick={closeMenu}>
+          X
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <a href="#news">News</a>
+            </li>
+            <li>
+              <a href="#podcast">PodCasts</a>
+            </li>
+            <li>
+              <a href="#videos">Gameplays</a>
+            </li>
+            <li>
+              <a href="#playlists">Playlists</a>
+            </li>
+            <li>
+              <a href="#live">theNettko ao Vivo</a>
+            </li>
+            <li>
+              <a href="#member">Sejá Membro</a>
+            </li>
+            <li>
+              <a href="#redes">Redes Sociais</a>
+            </li>
+            <li>
+              <a href="#about">Sobre Nós</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#assine">Assine Já</a>
+            </li>
+            <li>
+              <a href="#conta">Conta theNettko</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#login">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 };
 
-export default NavbarComponent;
+export default Navbar;
