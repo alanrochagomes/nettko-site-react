@@ -23,10 +23,26 @@
   margin-bottom: 20px;
 }
 
-/* Estilo para o título e descrição das notícias */
+/* Estilo para o título das notícias */
 .news-article h2 {
   font-size: 24px;
-  margin: 10;
+  margin: 0;
+}
+
+/* Estilo para links dentro dos títulos */
+.news-article h2 a {
+  color: black; /* Cor do texto do link */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilo para links dentro dos títulos ao passar o mouse */
+.news-article h2 a:hover {
+  color: blue; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para links dentro dos títulos quando clicados (ativo) */
+.news-article h2 a:active {
+  color: darkblue; /* Cor do texto quando clicado */
 }
 
 .news-article p {

@@ -4,7 +4,7 @@ import HomeComponent from "../pages/home/home.component";
 import VideosComponent from "../pages/videos/videos.component";
 import PlaylistsComponent from "../pages/playlists/playlist.component";
 import LivesComponent from "../pages/lives/live.component";
-import NewsComponent from "../pages/news/news.component";
+import NewsComponent from "../pages/news-games/news.component";
 import MemberComponent from "../pages/member/member.component";
 import AboutComponent from "../pages/about/about.component";
 import HelpComponent from "../pages/help/help.component";
