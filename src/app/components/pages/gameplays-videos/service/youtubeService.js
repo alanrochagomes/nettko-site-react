@@ -1,7 +1,6 @@
-// youtubeService.js
 const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.REACT_APP_YOUTUBE_CHANNEL_ID;
-const MAX_RESULTS = 10;
+const MAX_RESULTS = 50;
 
 export const fetchVideos = async () => {
   try {

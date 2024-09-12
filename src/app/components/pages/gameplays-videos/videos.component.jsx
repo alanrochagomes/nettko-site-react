@@ -1,4 +1,3 @@
-// videos.component.jsx
 import React, { useEffect, useState } from "react";
 import { fetchVideos } from "../gameplays-videos/service/youtubeService";
 import "../../pages/gameplays-videos/videos.component.css";
