@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const submenuItems = {
     videos: [
-      { label: "Gameplays", link: "/videos" },
+      { label: "Gameplays", link: "/videos/gameplays" },
       { label: "Programação", link: "/programacao" },
     ],
     news: [

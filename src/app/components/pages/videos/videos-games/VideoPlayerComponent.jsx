@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { videos } from "../gameplays-videos/service/youtubeService";
-import "../../pages/gameplays-videos/videoplayer.component.css";
+import { videos } from "../videos-games/service/youtubeService";
+import "../../videos/videos-games/videos.component.css";
 
 const VideoPlayerComponent = () => {
   const { videoId } = useParams();
