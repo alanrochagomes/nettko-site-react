@@ -12,7 +12,7 @@
 }
 
 .submenu-arrow {
-  color: #d32f2f;
+  color: #004aaa;
 }
 
 .submenu-overlay {
@@ -35,14 +35,14 @@
 }
 
 .back-btn {
-  background-color: transparent;
+  background-color: white;
   border: none;
   font-size: 18px;
-  color: #d32f2f;
+  color: #000000;
   cursor: pointer;
   margin: 10px;
 }
 
 .back-btn:hover {
-  color: #ff0000;
+  color: #004aaa;
 }
