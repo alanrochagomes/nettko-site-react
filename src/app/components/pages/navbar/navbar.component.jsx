@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../navbar/navbar.component.css";
+import "../../../../index.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -71,7 +72,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/news" onClick={closeMenu}>
-                News sobre Programaçao
+                News sobre Programação
               </Link>
             </li>
             <li>
@@ -79,7 +80,6 @@ const Navbar = () => {
                 PodCasts sobre Programação
               </Link>
             </li>
-
             <li>
               <Link to="/playlists" onClick={closeMenu}>
                 Playlists das Gameplays
@@ -110,15 +110,13 @@ const Navbar = () => {
                 Sobre Nós
               </Link>
             </li>
-            <hr />
-            <li>
+            <li className="sidebar-special">
               <a href="#assine">Assine Já</a>
             </li>
-            <li>
+            <li className="sidebar-special">
               <a href="#conta">Conta theNettko</a>
             </li>
-            <hr />
-            <li>
+            <li className="sidebar-special">
               <a href="#login">Login</a>
             </li>
           </ul>

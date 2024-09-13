@@ -1,0 +1,22 @@
+/* Garante que o conteúdo não exceda a largura da tela */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Oculta rolagem horizontal */
+}
+
+.container {
+  max-width: 100%; /* Garante que o container não exceda a largura da tela */
+  overflow-x: hidden; /* Oculta rolagem horizontal no container */
+}
+
+/* Certifique-se de que o conteúdo do sidebar não ultrapasse a largura da tela */
+.sidebar {
+  overflow-x: hidden;
+}
+
+/* Ajuste adicional para garantir que os elementos internos não causam rolagem horizontal */
+* {
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
