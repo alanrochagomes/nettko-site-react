@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Importando Link do react-router-dom
+import { Link } from "react-router-dom";
 import "../navbar/navbar.component.css";
 
 const Navbar = () => {
@@ -65,7 +65,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/podcasts" onClick={closeMenu}>
+              <Link to="/podcast" onClick={closeMenu}>
                 PodCasts sobre Games
               </Link>
             </li>

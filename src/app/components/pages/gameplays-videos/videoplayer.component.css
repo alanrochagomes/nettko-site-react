@@ -1,0 +1,126 @@
+/* Centralizar o contêiner do player na página */
+.video-player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: rgba(1, 162, 255, 0.055);
+}
+
+/* Ajusta o wrapper do player para garantir que o iframe se ajuste corretamente */
+.video-player-wrapper {
+  width: 100%;
+  max-width: 60%; /* Reduz a largura máxima do player para um pouco menor */
+  aspect-ratio: 16 / 9;
+  position: relative;
+  border: 2px solid #ddd; /* Adiciona a borda ao redor do player */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo do iframe não saia dos limites da borda */
+}
+
+.video-player-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove qualquer borda padrão do iframe */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Estilos para os detalhes do vídeo */
+.video-details {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.video-details h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.video-details p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.video-details strong {
+  color: #333;
+}
+
+/* Estilos do Modal */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.modal button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal button:last-child {
+  background-color: #f00;
+}
+
+.modal button:last-child:hover {
+  background-color: #c00;
+}
+
+@media (max-width: 768px) {
+  .video-player-wrapper {
+    max-width: 100%; /* Garante que o player ocupe toda a largura disponível em dispositivos móveis */
+  }
+
+  .video-details h3 {
+    font-size: 1.25rem; /* Ajusta o tamanho da fonte do título para telas menores */
+  }
+
+  .video-details p {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte da descrição para telas menores */
+  }
+}
