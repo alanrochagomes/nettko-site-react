@@ -56,7 +56,7 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <a href="https://youtube.theNettko.com">youtube.theNettko.com</a>
+              <a>@Nettko • 1,22 mil inscritos • 1,8 mil vídeos</a>
             </li>
           </ul>
         </nav>
@@ -93,25 +93,30 @@ const Navbar = () => {
             </li>
 
             <Submenu title="Vídeos" items={submenuItems.videos} />
-            <Submenu title="News" items={submenuItems.news} />
-            <Submenu title="Podcasts" items={submenuItems.podcasts} />
             <Submenu title="Playlists" items={submenuItems.playlists} />
             <Submenu title="Lives" items={submenuItems.lives} />
+            <Submenu title="News" items={submenuItems.news} />
+            <Submenu title="Podcasts" items={submenuItems.podcasts} />
             <Submenu title="Redes Sociais" items={submenuItems.redesSociais} />
 
             {/* Outros itens sem submenu */}
             <li>
-              <Link to="/member" onClick={closeMenu}>
-                Seja Membro
-              </Link>
+              <a href="https://www.youtube.com/@Nettko" target="blank">
+                YouTube
+              </a>
             </li>
+
             <li>
               <Link to="/about" onClick={closeMenu}>
                 Sobre Nós
               </Link>
             </li>
+
             <li className="sidebar-special">
-              <a href="#assine">Assine Já</a>
+              <a href="#member">Seja Membro</a>
+            </li>
+            <li className="sidebar-special">
+              <a href="#cadastro"> Acesse sua conta ou cadastre-se grátis</a>
             </li>
             <li className="sidebar-special">
               <a href="#conta">Conta theNettko</a>
