@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Submenu from "../navbar/submenu/Submenu";
 import "../navbar/navbar.component.css";
 import "../../../../index.css";
 
@@ -12,6 +13,37 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const submenuItems = {
+    videos: [
+      { label: "Gameplays", link: "/videos" },
+      { label: "Programação", link: "/programacao" },
+    ],
+    news: [
+      { label: "News sobre Games", link: "/news/games" },
+      { label: "News sobre Programação", link: "/news/programacao" },
+    ],
+    podcasts: [
+      { label: "Podcasts sobre Games", link: "/podcasts/games" },
+      { label: "Podcasts sobre Programação", link: "/podcasts/programacao" },
+    ],
+    playlists: [
+      { label: "Gameplays", link: "/playlists/gameplays" },
+      { label: "Programação", link: "/playlists/programacao" },
+      { label: "Podcasts", link: "/playlists/podcasts" },
+      { label: "Lives", link: "/playlists/lives" },
+    ],
+    lives: [
+      { label: "Gameplays", link: "/lives/gameplays" },
+      { label: "Programação", link: "/lives/programacao" },
+      { label: "Podcasts", link: "/lives/podcasts" },
+    ],
+    redesSociais: [
+      { label: "Instagram", link: "/redes/instagram" },
+      { label: "YouTube", link: "/redes/youtube" },
+      { label: "X", link: "/redes/x" },
+    ],
   };
 
   return (
@@ -52,57 +84,21 @@ const Navbar = () => {
           <ul>
             <li>
               <Link to="/" onClick={closeMenu}>
-                Inicio
+                Início
               </Link>
             </li>
-            <li>
-              <Link to="/videos" onClick={closeMenu}>
-                Gameplays
-              </Link>
-            </li>
-            <li>
-              <Link to="/news" onClick={closeMenu}>
-                News sobre Games
-              </Link>
-            </li>
-            <li>
-              <Link to="/podcast" onClick={closeMenu}>
-                PodCasts sobre Games
-              </Link>
-            </li>
-            <li>
-              <Link to="/news" onClick={closeMenu}>
-                News sobre Programação
-              </Link>
-            </li>
-            <li>
-              <Link to="/podcasts" onClick={closeMenu}>
-                PodCasts sobre Programação
-              </Link>
-            </li>
-            <li>
-              <Link to="/playlists" onClick={closeMenu}>
-                Playlists das Gameplays
-              </Link>
-            </li>
-            <li>
-              <Link to="/lives" onClick={closeMenu}>
-                theNettko ao Vivo sobre Games
-              </Link>
-            </li>
-            <li>
-              <Link to="/lives" onClick={closeMenu}>
-                theNettko ao Vivo sobre Programação
-              </Link>
-            </li>
+
+            <Submenu title="Vídeos" items={submenuItems.videos} />
+            <Submenu title="News" items={submenuItems.news} />
+            <Submenu title="Podcasts" items={submenuItems.podcasts} />
+            <Submenu title="Playlists" items={submenuItems.playlists} />
+            <Submenu title="Lives" items={submenuItems.lives} />
+            <Submenu title="Redes Sociais" items={submenuItems.redesSociais} />
+
+            {/* Outros itens sem submenu */}
             <li>
               <Link to="/member" onClick={closeMenu}>
                 Seja Membro
-              </Link>
-            </li>
-            <li>
-              <Link to="/redes" onClick={closeMenu}>
-                Redes Sociais
               </Link>
             </li>
             <li>
