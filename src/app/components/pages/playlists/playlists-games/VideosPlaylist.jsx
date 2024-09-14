@@ -1,16 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { getPlaylistDetails } from "../service/videoplaylist.service"; // Import the service
-import "../playlists-games/VideosPlaylist.css"; // Your custom styles
+import { getPlaylistDetails } from "../service/videoplaylist.service";
+import "../playlists-games/VideosPlaylist.css";
 
 const VideosPlaylist = () => {
   const { id } = useParams();
 
-  // Fetch the playlist details using the `id`
   const playlist = getPlaylistDetails(id);
 
   if (!playlist) {
-    return <p>Playlist not found!</p>; // Handle the case where the playlist is not found
+    return <p>Playlist not found!</p>;
   }
 
   return (

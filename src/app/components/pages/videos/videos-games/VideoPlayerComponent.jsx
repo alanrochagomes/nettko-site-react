@@ -15,7 +15,7 @@ const VideoPlayerComponent = () => {
 
   return (
     <div className="video-player-container">
-      {/* <h2>Player Interno</h2> */}
+      {/* TODO: <h2>Player Interno</h2> */}
       <div className="video-player-wrapper">
         <iframe
           width="560"

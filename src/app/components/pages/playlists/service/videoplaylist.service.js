@@ -272,5 +272,5 @@ export const getPlaylistDetails = (id) => {
     },
   };
 
-  return playlists[id] || null; // Return the playlist by ID, or null if not found
+  return playlists[id] || null;
 };

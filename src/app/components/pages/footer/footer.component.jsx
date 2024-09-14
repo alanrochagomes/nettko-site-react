@@ -1,5 +1,3 @@
-// src/pages/footer/footer.component.jsx
-
 import React from "react";
 import logo from "../../../../assets/images/logo.jpg";
 import "./footer.component.css";

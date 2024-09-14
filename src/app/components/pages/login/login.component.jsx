@@ -1,4 +1,3 @@
-// src/components/login/login.component.jsx
 import React from "react";
 import "./login.component.css";
 

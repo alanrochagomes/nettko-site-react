@@ -10,7 +10,7 @@ export const videos = [
           url: "https://wallpapers.com/images/high/4k-assassin-s-creed-valhalla-background-3840-x-2160-inzoy2k4g3k6c4bf.webp",
         },
       },
-      description: "3 visualizações • 6 de jul. de 2024", // Atualize a descrição conforme solicitado
+      description: "3 visualizações • 6 de jul. de 2024",
     },
   },
   {

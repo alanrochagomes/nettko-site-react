@@ -15,7 +15,7 @@ Bem-vindo ao **theNettko**! Este projeto é um site dedicado a fornecer informa�
 ## Tecnologias Utilizadas
 
 - **Frontend/Backend**: React
-- **API**: YouTube Data API v3
+<!-- - **API**: YouTube Data API v3 -->
 - **Estilização**: CSS
 
 ## Requisitos
@@ -23,7 +23,7 @@ Bem-vindo ao **theNettko**! Este projeto é um site dedicado a fornecer informa�
 - **Node.js**: Versão 14.x ou superior
 - **NPM**: Versão 6.x ou superior
 
-## Configuração do Ambiente
+<!-- ## Configuração do Ambiente
 
 Para configurar o projeto localmente, siga as instruções abaixo:
 
@@ -62,7 +62,7 @@ Clone este repositório para o seu ambiente local:
 REACT_APP_YOUTUBE_API_KEY=YOUR_API_KEY
 REACT_APP_YOUTUBE_CHANNEL_ID=YOUR_CHANNEL_ID
 ```
-Substitua YOUR_API_KEY pela sua chave da API do YouTube e YOUR_CHANNEL_ID pelo ID do seu canal do YouTube.
+Substitua YOUR_API_KEY pela sua chave da API do YouTube e YOUR_CHANNEL_ID pelo ID do seu canal do YouTube. -->
 
 ### 3. Instalar Dependências
 
@@ -79,9 +79,8 @@ Inicie o servidor de desenvolvimento para ver o projeto em funcionamento:
 ```
 npm start
 ```
+
 A aplicação estará disponível em http://localhost:3000.
-
-
 
 **Contribuindo**
 
@@ -92,7 +91,5 @@ _Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fo
 _Este projeto está licenciado sob a Licença MIT._
 
 _Se você tiver alguma dúvida ou problema, não hesite em abrir uma issue no GitHub ou entrar em contato com o mantenedor do projeto._
-
-
 
 **_Obrigado por usar o theNettko!_**

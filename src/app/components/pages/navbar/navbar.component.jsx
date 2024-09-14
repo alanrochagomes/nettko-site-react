@@ -22,32 +22,32 @@ const Navbar = () => {
         label: "Exclusive Gameplays",
         link: "/videos/exclusivegameplays",
       },
-      { label: "Programação", link: "/programacao" },
+      //TODO: { label: "Programação", link: "/programacao" },
     ],
     news: [
       { label: "News sobre Games", link: "/news/games" },
-      { label: "News sobre Programação", link: "/news/programacao" },
+      // TODO: { label: "News sobre Programação", link: "/news/programacao" },
     ],
     podcasts: [
       { label: "Podcasts sobre Games", link: "/podcasts/games" },
-      { label: "Podcasts sobre Programação", link: "/podcasts/programacao" },
+      // TODO: { label: "Podcasts sobre Programação", link: "/podcasts/programacao" },
     ],
     playlists: [
       { label: "Gameplays", link: "/playlists/gameplays" },
-      { label: "Programação", link: "/playlists/programacao" },
-      { label: "Podcasts", link: "/playlists/podcasts" },
-      { label: "Lives", link: "/playlists/lives" },
+      //  TODO:{ label: "Programação", link: "/playlists/programacao" },
+      // { label: "Podcasts", link: "/playlists/podcasts" },
+      // { label: "Lives", link: "/playlists/lives" },
     ],
     lives: [
       { label: "Gameplays", link: "/lives/gameplays" },
-      { label: "Programação", link: "/lives/programacao" },
-      { label: "Podcasts", link: "/lives/podcasts" },
+      // TODO: { label: "Programação", link: "/lives/programacao" },
+      // { label: "Podcasts", link: "/lives/podcasts" },
     ],
-    redesSociais: [
-      { label: "Instagram", link: "/redes/instagram" },
-      { label: "YouTube", link: "/redes/youtube" },
-      { label: "X", link: "/redes/x" },
-    ],
+    // TODO: redesSociais: [
+    //   { label: "Instagram", link: "/redes/instagram" },
+    //   { label: "YouTube", link: "/redes/youtube" },
+    //   { label: "X", link: "/redes/x" },
+    // ],
   };
 
   return (
@@ -60,10 +60,10 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <div className="account">
+        {/* TODO: <div className="account">
           <a href="#assine">Assine Já</a>
           <a href="#conta">Conta theNettko</a>
-        </div>
+        </div> */}
       </div>
 
       <div className="navbar">
@@ -79,7 +79,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Sidebar */}
       <div className={`sidebar ${menuOpen ? "open" : ""}`}>
         <button className="close-btn" onClick={closeMenu}>
           X
@@ -93,11 +92,11 @@ const Navbar = () => {
             </li>
 
             <Submenu title="Vídeos" items={submenuItems.videos} />
-            <Submenu title="Playlists" items={submenuItems.playlists} />
+            {/* TODO: <Submenu title="Playlists" items={submenuItems.playlists} />
             <Submenu title="Lives" items={submenuItems.lives} />
             <Submenu title="News" items={submenuItems.news} />
-            <Submenu title="Podcasts" items={submenuItems.podcasts} />
-            <Submenu title="Redes Sociais" items={submenuItems.redesSociais} />
+            <Submenu title="Podcasts" items={submenuItems.podcasts} /> */}
+            {/* <Submenu title="Redes Sociais" items={submenuItems.redesSociais} /> */}
 
             {/* Outros itens sem submenu */}
             <li>
@@ -112,7 +111,7 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="sidebar-special">
+            {/* TODO: <li className="sidebar-special">
               <a href="#member">Seja Membro</a>
             </li>
             <li className="sidebar-special">
@@ -123,7 +122,7 @@ const Navbar = () => {
             </li>
             <li className="sidebar-special">
               <a href="#login">Login</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

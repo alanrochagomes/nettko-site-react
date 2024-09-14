@@ -1,10 +1,8 @@
-// playlist.service.js
-
 export const playlists = [
   {
     id: 1,
     title: "Tom Clancy's Rainbow Six Siege",
-    image: "rainbow-six-siege.jpg", // Adicione suas imagens adequadamente
+    image: "rainbow-six-siege.jpg",
     videos: 140,
   },
   {
@@ -19,5 +17,4 @@ export const playlists = [
     image: "assassins-creed-3.jpg",
     videos: 13,
   },
-  // Adicione mais playlists aqui
 ];

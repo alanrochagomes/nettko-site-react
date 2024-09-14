@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../submenu/Submenu.css"; // Importando o arquivo CSS
+import "../submenu/Submenu.css";
 
 const Submenu = ({ title, items }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Submenu = ({ title, items }) => {
     <>
       <li onClick={openSubmenu} className="menu-item">
         <span>{title}</span>
-        {/* Exibir seta apenas se houver itens no submenu */}
+
         {items && items.length > 0 && <span className="submenu-arrow">›</span>}
       </li>
 

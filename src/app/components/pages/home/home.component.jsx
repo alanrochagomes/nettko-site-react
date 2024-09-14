@@ -10,14 +10,13 @@ const HomeComponent = () => {
         <img src={banner} alt="Banner" className="banner" />
         <div className="hero-text">
           <h1 className="hero-title">Welcome to theNettko WebSite!</h1>
-          <p className="hero-subtitle">Vídeos Exclusivos para Membros!</p>
+          {/* TODO: <p className="hero-subtitle">Vídeos Exclusivos para Membros!</p>
           <a href="#games" className="cta-button">
             Assine Já
-          </a>
+          </a> */}
         </div>
       </header>
 
-      {/* Seção Games */}
       <section id="games" className="games-section">
         <h2 className="section-title">
           Jogos em andamento e suas curiosidades!
@@ -71,7 +70,7 @@ const HomeComponent = () => {
         </div>
       </section>
 
-      {/* Seção News */}
+      {/* TODO:       
       <section id="news" className="news-section">
         <h2 className="section-title">Novidades sobre Games e Programação</h2>
         <div className="news-grid">
@@ -90,10 +89,9 @@ const HomeComponent = () => {
             </p>
           </article>
         </div>
-      </section>
+      </section> */}
 
-      {/* Seção Podcasts */}
-      <section id="podcasts" className="podcast-section">
+      {/* TODO: <section id="podcasts" className="podcast-section">
         <h2 className="section-title">Podcasts de Games e Programação</h2>
         <div className="podcast-grid">
           <article className="podcast-card">
@@ -110,7 +108,7 @@ const HomeComponent = () => {
             </p>
           </article>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

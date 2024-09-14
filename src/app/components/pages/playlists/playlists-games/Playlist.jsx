@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../playlists-games/Playlist.css"; // Import your CSS file for styling
-import { playlists } from "../service/playlist.service"; // Import the playlists from the service
+import "../playlists-games/Playlist.css";
+import { playlists } from "../service/playlist.service";
 
 const Playlist = () => {
   const [selectedPlaylist, setSelectedPlaylist] = useState(null);
   const navigate = useNavigate();
 
   const handleViewPlaylist = (id) => {
-    // Navigate to the specific playlist page
     navigate(`/playlist/${id}`);
   };
 
   const handlePlaylistClick = (id) => {
-    setSelectedPlaylist(id === selectedPlaylist ? null : id); // Toggle the playlist selection
+    setSelectedPlaylist(id === selectedPlaylist ? null : id);
   };
 
   return (
@@ -35,18 +34,17 @@ const Playlist = () => {
             <button
               className="view-playlist-button"
               onClick={(e) => {
-                e.stopPropagation(); // Prevent collapsing the playlist card
+                e.stopPropagation();
                 handleViewPlaylist(playlist.id);
               }}
             >
               Ver playlist completa
             </button>
           </div>
-          {/* Show the list of videos when playlist is clicked */}
+
           {selectedPlaylist === playlist.id && (
             <div className="playlist-list">
               <p>Show video list here...</p>
-              {/* You will populate this with actual video data */}
             </div>
           )}
         </div>
