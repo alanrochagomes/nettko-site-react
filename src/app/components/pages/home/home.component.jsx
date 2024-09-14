@@ -5,7 +5,6 @@ import "../home/home.component.css";
 const HomeComponent = () => {
   return (
     <div className="home-container">
-      {/* Seção Hero */}
       <header className="hero-section">
         <img src={banner} alt="Banner" className="banner" />
         <div className="hero-text">
