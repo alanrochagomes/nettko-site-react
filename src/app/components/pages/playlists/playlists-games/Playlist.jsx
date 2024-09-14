@@ -1,30 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../playlists-games/Playlist.css"; // Import your CSS file for styling
+import { playlists } from "../service/playlist.service"; // Import the playlists from the service
 
 const Playlist = () => {
   const [selectedPlaylist, setSelectedPlaylist] = useState(null);
+  const navigate = useNavigate();
 
-  const playlists = [
-    {
-      id: 1,
-      title: "Tom Clancy's Rainbow Six Siege",
-      image: "rainbow-six-siege.jpg", // Add your images accordingly
-      videos: 140,
-    },
-    {
-      id: 2,
-      title: "Euro Truck Simulator 2",
-      image: "euro-truck-simulator-2.jpg",
-      videos: 2,
-    },
-    {
-      id: 3,
-      title: "Assassin's Creed III Remastered",
-      image: "assassins-creed-3.jpg",
-      videos: 13,
-    },
-    // Add other playlists here...
-  ];
+  const handleViewPlaylist = (id) => {
+    // Navigate to the specific playlist page
+    navigate(`/playlist/${id}`);
+  };
 
   const handlePlaylistClick = (id) => {
     setSelectedPlaylist(id === selectedPlaylist ? null : id); // Toggle the playlist selection
@@ -46,7 +32,13 @@ const Playlist = () => {
           <div className="playlist-info">
             <h3>{playlist.title}</h3>
             <p>{playlist.videos} videos</p>
-            <button className="view-playlist-button">
+            <button
+              className="view-playlist-button"
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent collapsing the playlist card
+                handleViewPlaylist(playlist.id);
+              }}
+            >
               Ver playlist completa
             </button>
           </div>

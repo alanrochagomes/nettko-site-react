@@ -1,27 +1,17 @@
 import React from "react";
-import "../playlists-games/VideosPlaylist.css"; // Import your CSS file for styling
+import { useParams } from "react-router-dom";
+import { getPlaylistDetails } from "../service/videoplaylist.service"; // Import the service
+import "../playlists-games/VideosPlaylist.css"; // Your custom styles
 
-const VideosPlaylist = ({ playlist }) => {
-  // Example video data; replace this with your actual data
-  const videos = [
-    {
-      id: 1,
-      title: "Assassin’s Creed Valhalla Parte 1 Gameplay",
-      duration: "30:10",
-      views: 21,
-      uploaded: "há 1 ano",
-      thumbnail: "video1.jpg",
-    },
-    {
-      id: 2,
-      title: "Assassin’s Creed Valhalla Parte 2 Gameplay",
-      duration: "17:32",
-      views: 13,
-      uploaded: "há 1 ano",
-      thumbnail: "video2.jpg",
-    },
-    // Add other video data here
-  ];
+const VideosPlaylist = () => {
+  const { id } = useParams();
+
+  // Fetch the playlist details using the `id`
+  const playlist = getPlaylistDetails(id);
+
+  if (!playlist) {
+    return <p>Playlist not found!</p>; // Handle the case where the playlist is not found
+  }
 
   return (
     <div className="videos-playlist-container">
@@ -44,7 +34,7 @@ const VideosPlaylist = ({ playlist }) => {
       </div>
 
       <div className="video-list">
-        {videos.map((video, index) => (
+        {playlist.videos.map((video, index) => (
           <div key={video.id} className="video-item">
             <div className="video-index">{index + 1}</div>
             <img

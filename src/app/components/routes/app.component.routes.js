@@ -30,6 +30,7 @@ const App = () => {
         <Route path="/about" element={<AboutComponent />} />
         <Route path="/help" element={<HelpComponent />} />
         <Route path="/watch/:videoId" element={<VideoPlayerGames />} />
+        <Route path="/playlist/:id" element={<Playlist />} />
       </Routes>
       <FooterComponent />
     </Router>
