@@ -6,7 +6,7 @@ import VideoPlayerGames from "../pages/videos/videos-games/VideoPlayerComponent"
 import PlaylistsGames from "../pages/playlists/playlists-games/ListVideosPlayer";
 import VideoDetailsPage from "../pages/playlists/playlists-games/VideoDetailsPage";
 import LivesComponent from "../pages/lives/live.component";
-import NewsComponent from "../pages/news-games/news.component";
+import NewsComponent from "../pages/news/news-games/news.component";
 // import PodcastTi from "../pages/podcast/podcast-ti/PodcastTi";
 // import PodcastGames from "../pages/podcast/podcast-games/PodcastGames";
 import MemberComponent from "../pages/member/member.component";

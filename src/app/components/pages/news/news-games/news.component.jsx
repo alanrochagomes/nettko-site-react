@@ -1,5 +1,5 @@
 import React from "react";
-import newsArticles from "../../../../data/newsData";
+import newsArticles from "../../news/news-games/service/newsData";
 import "../news-games/news.component.css";
 
 const NewsComponent = () => {
