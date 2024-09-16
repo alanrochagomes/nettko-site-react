@@ -1,43 +1,26 @@
-/* Geral */
 body {
   background-color: #f8f9fa;
   color: #212529;
 }
 
-/* Layout Principal */
-.home-container {
-  font-family: "Arial", sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-  min-height: 100vh;
-  font-weight: bold;
-}
-
-/* Hero Section */
 .hero-section {
   position: relative;
   width: 100%;
-  height: 400px; /* Altura do banner */
-  overflow: hidden;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.hero-section .banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  background-image: url("../../../../assets/images/channel_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-text {
   position: relative;
   z-index: 1;
+  color: #fff;
 }
 
 .hero-title {
@@ -66,7 +49,6 @@ body {
   color: #ffffff;
 }
 
-/* Games Section */
 .games-section {
   padding: 4rem 2rem;
 }
@@ -107,7 +89,6 @@ body {
   color: #b3b3b3;
 }
 
-/* News Section */
 .news-section {
   padding: 4rem 2rem;
   background-color: #f1f1f1;
@@ -137,7 +118,6 @@ body {
   font-size: 1rem;
 }
 
-/* Podcasts Section */
 .podcast-section {
   padding: 4rem 2rem;
 }
@@ -164,4 +144,19 @@ body {
 
 .podcast-description {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 250px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    height: 200px;
+    background-size: contain;
+    background-position: center top;
+  }
 }

@@ -42,7 +42,7 @@ const About = () => {
           horizontes!
         </p>
       </section>
-      {/* 
+      {/* TODO:
       <section className="about-team">
         <h2>Nosso Time/h2>
         <div className="team-members">
