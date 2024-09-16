@@ -110,11 +110,14 @@
 
 @media (max-width: 768px) {
   .video-player-wrapper {
-    max-width: 100%;
+    max-width: 110%;
+    max-width: 110%;
   }
 
   .video-player-container {
     height: 73vh;
+    height: -150vh;
+    padding: 1rem;
   }
 
   .video-details h3 {
