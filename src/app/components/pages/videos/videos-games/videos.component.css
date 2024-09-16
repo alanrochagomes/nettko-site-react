@@ -47,6 +47,17 @@ p.video-date {
   text-align: left;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #212529;
+  border-radius: 50rem;
+}
+
 @media (max-width: 1200px) {
   .video-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -62,5 +73,16 @@ p.video-date {
 @media (max-width: 600px) {
   .video-grid {
     grid-template-columns: 1fr;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 50rem;
   }
 }
