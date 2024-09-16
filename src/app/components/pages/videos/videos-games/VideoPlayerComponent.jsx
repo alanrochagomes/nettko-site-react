@@ -27,7 +27,7 @@ const VideoPlayerComponent = () => {
           allowFullScreen
         ></iframe>
       </div>
-      {/* <div className="video-details">
+      {/* TODO: <div className="video-details">
         <h3>{title}</h3>
         <p>{description}</p>
       </div> */}
